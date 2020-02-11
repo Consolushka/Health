@@ -8,29 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <div class="header-first-container">
-        <div class="header-first container">
-            <div class="header-first-main">
-                <img src="img/vjtpl.png" height="58" width="185" alt="logo">
-                <span class="location">Ханты-Мансийский АО</span>
-            </div>
-            <nav class="nav">
+<header class="header">
+    <div class="header-first">
+        <div class="header-container container">
+            <img class="header-logo" src="img/logo.png" height="30" width="161" alt="logo">
+            <span class="header-location">Москва и область</span>
+            <nav class="header-nav">
                 <ul class="navigation">
                     <li class="header-button"><a href="#">Аптеки</a></li>
-                    <li class="header-button"><a href="#">Лекарства</a></li>
-                    <li class="header-button"><a href="#">Болезни</a></li>
+                    <li class="header-button"><a href="#">Справочник</a></li>
                     <li class="header-button"><a href="#">Акции</a></li>
                     <li class="header-button"><a href="#">О программе</a></li>
                 </ul>
             </nav>
             <div class="user header-button">
-                <a href="#">Профиль</a>
+                <a href="#">Войти</a>
             </div>
             <a href="tel:88005004549" class="phone">8 800 500 45 49</a>
         </div>
     </div>
-    <div class="header-second container">
+    <div class="header-second header-container container">
         <button type="button" class="catalog-button">
             <span class="hamb"></span>
             <span>Каталог</span>
@@ -42,15 +39,13 @@
             </label>
             <button type="submit" class="search-done-button">Найти</button>
         </form>
-        <div class="favorites">
-            <a href="#" class="favorites-button">
-                <span class="visually-hidden">Избранное</span>
-            </a>
-            <a href="#" class="basket-button">
-                <span class="visually-hidden">Корзина</span>
-                <span class="basket-count">4</span>
-            </a>
-        </div>
+        <a href="#" class="bookmarks-button">
+            <span>Закладки</span>
+        </a>
+        <a href="#" class="basket-button">
+            <span>Корзина</span>
+            <span class="basket-count">4</span>
+        </a>
     </div>
 </header>
 </body>

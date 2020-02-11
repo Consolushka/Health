@@ -1,8 +1,20 @@
 .header-button {
-    padding: 21px 12px 22px 12px;
+    padding: 21px 16px 22px 15px;
     cursor: pointer;
 }
 
+.user.header-button {
+    width: 96px;
+    height: 59px;
+
+    margin-left: 12px;
+
+    padding: 22px 19px 19px 20px;
+}
+
+.user:before {
+    content: url("../img/login.svg");
+}
 .header-button:hover,
 .header-button:active,
 .header-button:focus {
@@ -15,7 +27,8 @@
     justify-content: flex-start;
     align-items: center;
 
-    padding: 13px 45px 12px 45px;
+    padding: 13px 38px 11px 36px;
+    letter-spacing: 1px;
 
     background-color: #ebeef1;
 
@@ -54,40 +67,57 @@
 
 .search-done-button {
     cursor: pointer;
-
-    padding: 12px 41px 12px 41px;
-
+    letter-spacing: 1px;
+    color: #f4f6f9;
+    padding: 10px 23px 13px 22px;
+    margin-top: 4px;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    background: #1771f1;
 
-    color: #f4f6f9;
-
-    background: linear-gradient(to right, #1771f1, #0043a4);
+    transition: background 0.3s;
 }
 
 .search-done-button:hover {
     background: #0043a4;
-
-    transition-duration: 0.3s;
 }
 
-.favorites-button:before {
-    content: url("../img/heart.svg");
+.bookmarks-button {
+    font-weight: 500;
+
+    margin-left: 72px;
+    margin-top: 2px;
+
+    position: relative;
 }
 
-.favorites-button:hover:before {
-    content: url("../img/heart-hover.svg");
+.bookmarks-button:before {
+    content: url("../img/like.svg");
+
+    position: absolute;
+    top: -2px;
+    left: -32px;
+
+    transition: content 1s;
+}
+
+.bookmarks-button:hover:before {
+    content: url("../img/like-hover.svg");
 }
 
 .basket-button {
+    font-weight: 500;
+
+    left: 63px;
+    top: 1px;
     position: relative;
 }
 
 .basket-button:before {
     position: absolute;
-    top: -14px;
-    left: -32px;
+    top: -2px;
+    left: -28px;
 
     content: url("../img/basket.svg");
 }
@@ -95,7 +125,6 @@
 .basket-button:hover:before {
     content: url("../img/basket-hover.svg");
 
-    transition-duration: 1s;
 }
 
 .basket-count {
@@ -103,23 +132,19 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     position: absolute;
-    top: -21px;
-    left: -19px;
-
-    min-width: 18px;
-    height: 18px;
-
+    font-size: 10px;
+    top: -7px;
+    left: -20px;
+    min-width: 14px;
+    height: 14px;
     border-radius: 50%;
-
     color: #f4f4f4;
-
-    background: linear-gradient(to right, #1771f1, #0043a4);;
+    background: #1771f1;
+    transition: background 0.3s;
 }
 
 .basket-button:hover .basket-count {
     background: #0043a4;
 
-    transition-duration: 1s;
 }
