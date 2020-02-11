@@ -1,0 +1,99 @@
+.header-first-container {
+    background-color: #145ec9;
+
+    color: #f5f4f9;
+}
+
+.header-first {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-first-main {
+    width: 371px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location {
+}
+
+.nav {
+    width: 420px;
+    margin-left: 86px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.user.header-button {
+    width: 122px;
+    height: 59px;
+
+    margin-left: 18px;
+    padding: 21px 20px 24px 42px;
+}
+
+.phone {
+    margin-left: 41px;
+}
+
+.header-second {
+    height: 79px;
+
+    border-bottom: 1px solid #c9d7ea;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.search-form {
+    width: 814px;
+
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-field {
+    width: 692px;
+
+    padding-left: 21px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    background-color: #ebeef1;
+
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.search-field::placeholder {
+    color: #96a7be;
+}
+
+.favorites {
+    width: 84px;
+
+    margin-left: 61px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+

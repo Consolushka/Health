@@ -1,0 +1,125 @@
+.header-button {
+    padding: 21px 12px 22px 12px;
+    cursor: pointer;
+}
+
+.header-button:hover,
+.header-button:active,
+.header-button:focus {
+    background-color: #0043a4;
+}
+
+.catalog-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 13px 45px 12px 45px;
+
+    background-color: #ebeef1;
+
+    color: #1670ef;
+
+    border: none;
+    border-radius: 3px;
+}
+
+.hamb {
+    margin-right: 10px;
+}
+
+.hamb,
+.hamb:before,
+.hamb:after {
+    display: block;
+
+    width: 12px;
+    height: 2px;
+    background-color: #1670ef;
+}
+
+.hamb:before,
+.hamb:after {
+    content: '';
+}
+
+.hamb:before {
+    transform: translateY(-4px);
+}
+
+.hamb:after {
+    transform: translateY(2px);
+}
+
+.search-done-button {
+    cursor: pointer;
+
+    padding: 12px 41px 12px 41px;
+
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    color: #f4f6f9;
+
+    background: linear-gradient(to right, #1771f1, #0043a4);
+}
+
+.search-done-button:hover {
+    background: #0043a4;
+
+    transition-duration: 0.3s;
+}
+
+.favorites-button:before {
+    content: url("../img/heart.svg");
+}
+
+.favorites-button:hover:before {
+    content: url("../img/heart-hover.svg");
+}
+
+.basket-button {
+    position: relative;
+}
+
+.basket-button:before {
+    position: absolute;
+    top: -14px;
+    left: -32px;
+
+    content: url("../img/basket.svg");
+}
+
+.basket-button:hover:before {
+    content: url("../img/basket-hover.svg");
+
+    transition-duration: 1s;
+}
+
+.basket-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: -21px;
+    left: -19px;
+
+    min-width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    color: #f4f4f4;
+
+    background: linear-gradient(to right, #1771f1, #0043a4);;
+}
+
+.basket-button:hover .basket-count {
+    background: #0043a4;
+
+    transition-duration: 1s;
+}

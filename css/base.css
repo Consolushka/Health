@@ -1,0 +1,36 @@
+body {
+    background-color: #f4f4f4;
+
+    box-sizing: border-box;
+    font-family: 'CeraRoundPro', sans-serif;
+    font-size: 14px;
+    color: #343030;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    height: 0;
+    margin: -1px;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: 1160px;
+
+    margin: 0 auto;
+}
