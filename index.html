@@ -11,8 +11,8 @@
 <header class="header">
     <div class="header-first">
         <div class="header-container container">
-            <img class="header-logo" src="img/logo.png" height="30" width="161" alt="logo">
-            <span class="header-location">Москва и область</span>
+            <img class="header-logo" src="img/logotipe.png" height="30" width="161" alt="logo">
+            <span class="header-location"><button class="location-button" type="button">Москва и область</button></span>
             <nav class="header-nav">
                 <ul class="navigation">
                     <li class="header-button"><a href="#">Аптеки</a></li>
@@ -28,25 +28,75 @@
         </div>
     </div>
     <div class="header-second header-container container">
-        <button type="button" class="catalog-button">
+        <button type="button" class="header-catalog catalog-button">
             <span class="hamb"></span>
             <span>Каталог</span>
         </button>
-        <form action="#" method="post" class="search-form">
+        <form action="#" method="post" class="header-search search-form">
             <label class="search">
                 <input id="search" type="search" name="search" value="" class="search-field"
                        placeholder="Поиск по названию, действующему средству">
             </label>
             <button type="submit" class="search-done-button">Найти</button>
         </form>
-        <a href="#" class="bookmarks-button">
+        <a href="#" class="header-favourites bookmarks-button">
             <span>Закладки</span>
         </a>
-        <a href="#" class="basket-button">
+        <a href="#" class="header-favourites basket-button">
             <span>Корзина</span>
             <span class="basket-count">4</span>
         </a>
     </div>
 </header>
+
+<main class="main container">
+    <div class="offer-card">
+        <div class="offer-card-content">
+            <h3 class="offer-card-h3">Все, что нужно &#8212; это карта</h3>
+            <h1 class="offer-card-h1">Почта Банк и «Моё здоровье»</h1>
+            <p class="offer-card-note">
+                Специальные условия для держателей карт банка, на покупку
+                лекарственных средстве и товаров для красоты и здоровья
+                на сайте программы доступного лечения <a href="#" class="note-link">moezdorovie.ru</a>
+            </p>
+            <button class="offer-button offer-card-button" type="button">Заказать товары со скидкой</button>
+        </div>
+        <img class="offer-card-image" src="img/card.png" alt="Изображение Карты" width="475" height="335">
+    </div>
+    <div class="offer-advantages">
+        <h2 class="offer-advantages-heading">Специальное предложение для держателей карт ПочтаБанка</h2>
+        <div class="offer-advantages-content">
+            <div class="offer-advantage">
+                <div class="advantage-image">
+                    <img src="img/shield.png" width="28" height="30" alt="Логотип">
+                </div>
+                <p class="advantage-content">
+                    Дополнительная скидка 3% на любые
+                    товары при заказе через сайт
+                    moezdorovie.ru
+                </p>
+            </div>
+            <div class="offer-advantage">
+                <div class="advantage-image">
+                    <img src="img/%25.png" width="31" height="26" alt="Скидки">
+                </div>
+                <p class="advantage-content">
+                    Накопление бонусов уже с первой
+                    покупки - получайте скидки до 70%
+                </p>
+            </div>
+            <div class="offer-advantage">
+                <div class="advantage-image">
+                    <img src="img/logo.png" width="47" height="15" alt="Специальное предложение">
+                </div>
+                <p class="advantage-content">
+                    Специальные предложения от
+                    партнеров: скидка 10% на лабораторные
+                    исследования в офисах CMD
+                </p>
+            </div>
+        </div>
+    </div>
+</main>
 </body>
 </html>

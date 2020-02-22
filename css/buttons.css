@@ -21,23 +21,33 @@
     background-color: #0043a4;
 }
 
+.location-button {
+    cursor: pointer;
+
+    color: #f4f4f4;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
 .catalog-button {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 
-    padding: 13px 38px 11px 36px;
+    cursor: pointer;
+
     letter-spacing: 1px;
 
-    background-color: #ebeef1;
-
-    color: #1670ef;
-
-    border: none;
+    border: 1px solid transparent;
     border-radius: 3px;
 }
 
+.catalog-button:focus {
+    border: 1px solid #145ec9;
+}
 .hamb {
     margin-right: 10px;
 }
@@ -70,7 +80,6 @@
     letter-spacing: 1px;
     color: #f4f6f9;
     padding: 10px 23px 13px 22px;
-    margin-top: 4px;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -84,12 +93,7 @@
 }
 
 .bookmarks-button {
-    font-weight: 500;
-
-    margin-left: 72px;
-    margin-top: 2px;
-
-    position: relative;
+    padding-left: 72px;
 }
 
 .bookmarks-button:before {
@@ -97,7 +101,7 @@
 
     position: absolute;
     top: -2px;
-    left: -32px;
+    left: 41px;
 
     transition: content 1s;
 }
@@ -107,17 +111,13 @@
 }
 
 .basket-button {
-    font-weight: 500;
-
-    left: 63px;
-    top: 1px;
-    position: relative;
+    padding-left: 63px;
 }
 
 .basket-button:before {
     position: absolute;
     top: -2px;
-    left: -28px;
+    left: 34px;
 
     content: url("../img/basket.svg");
 }
@@ -135,7 +135,7 @@
     position: absolute;
     font-size: 10px;
     top: -7px;
-    left: -20px;
+    left: 42px;
     min-width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -146,5 +146,25 @@
 
 .basket-button:hover .basket-count {
     background: #0043a4;
+}
 
+.offer-button {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+
+    background: #1670ef;
+
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.offer-button:hover {
+    background: #0043a4;
+}
+
+.offer-card-button {
+    padding: 20px 40px 24px 39px;
+    border-radius: 30px;
+    margin-top: 36px;
 }
