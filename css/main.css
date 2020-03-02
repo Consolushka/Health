@@ -38,6 +38,7 @@
 
 .offer-card-image {
     margin-right: -7px;
+    margin-top: -19px;
 }
 
 .note-link {
@@ -50,6 +51,10 @@
     color: #0043a4;
 }
 
+.offer-advantages {
+    margin-top: 113px;
+}
+
 .offer-advantages-content {
     width: 100%;
 
@@ -60,10 +65,14 @@
     flex-wrap: wrap;
 }
 
-.offer-advantages-heading {
+.main-page-heading {
     font-size: 32px;
     font-weight: 600;
     color: #052555;
+}
+
+.offer-advantages-heading {
+    line-height: 40px;
 
     margin-bottom: 60px;
 
@@ -95,10 +104,147 @@
 
 .advantage-content {
     margin-left: 30px;
+    margin-top: 24px;
 
-    width: 295px;
+    width: 320px;
 
     font-size: 16px;
-
+    line-height: 22px;
     color: #052555;
+}
+
+.offer-delivery {
+    margin-top: 195px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.offer-delivery-heading {
+    width: 580px;
+
+    margin-bottom: 60px;
+    line-height: 38px;
+}
+
+
+.offer-delivery-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.offer-sales {
+    min-height: 444px;
+    padding: 54px 50px 0px 62px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 10px #f1f4f5;
+}
+
+.sales-heading {
+    width: 316px;
+
+    line-height: 29px;
+    font-size: 22px;
+    color: #1670ef;
+}
+
+.sales-content {
+    margin-bottom: 47px;
+    margin-top: 24px;
+
+    width: 350px;
+
+    font-size: 16px;
+    color: #052555;
+}
+
+.sales-content p {
+    line-height: 22px;
+}
+
+.sales-content p:last-child {
+    margin-top: 26px;
+    line-height: 25px;
+}
+
+.delivery-instruction {
+    margin-left: 38px;
+    margin-top: -4px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.delivery-instruction-step {
+    margin-bottom: 52px;
+}
+
+.delivery-instruction-step:nth-child(odd) {
+    width: 360px;
+}
+
+.delivery-instruction-step:nth-child(even) {
+    width: 225px;
+    margin-right: 35px;
+}
+
+.step-number {
+    font-size: 24px;
+    color: #cccfd0;
+    font-weight: 600;
+}
+
+.step-content {
+    margin-top: 21px;
+    line-height: 23px;
+    color: #052555;
+    font-size: 16px;
+}
+
+
+.catalog-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.catalog-heading {
+    width: 700px;
+
+    line-height: 38px;
+}
+
+.text-attention {
+    color: #1670ef;
+}
+
+.catalog-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }

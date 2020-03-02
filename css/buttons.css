@@ -93,7 +93,7 @@
 }
 
 .bookmarks-button {
-    padding-left: 72px;
+    padding-left: 44px;
 }
 
 .bookmarks-button:before {
@@ -101,7 +101,7 @@
 
     position: absolute;
     top: -2px;
-    left: 41px;
+    left: 12px;
 
     transition: content 1s;
 }
@@ -111,13 +111,13 @@
 }
 
 .basket-button {
-    padding-left: 63px;
+    padding-left: 33px;
 }
 
 .basket-button:before {
     position: absolute;
     top: -2px;
-    left: 34px;
+    left: 5px;
 
     content: url("../img/basket.svg");
 }
@@ -135,7 +135,7 @@
     position: absolute;
     font-size: 10px;
     top: -7px;
-    left: 42px;
+    left: 13px;
     min-width: 14px;
     height: 14px;
     border-radius: 50%;
@@ -167,4 +167,26 @@
     padding: 20px 40px 24px 39px;
     border-radius: 30px;
     margin-top: 36px;
+}
+
+.button-sales {
+    padding: 19px 107px 20px 111px;
+
+    font-size: 16px;
+    font-weight: 600;
+    color: #1670ef;
+
+    border: 1px solid #1670ef;
+    border-radius: 30px;
+}
+
+.delivery-button {
+    margin-top: 19px;
+    padding: 18px 18px 23px 19px;
+    border-radius: 30px;
+}
+
+.catalog-header-button {
+    padding: 18px 18px 23px 19px;
+    border-radius: 30px;
 }

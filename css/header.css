@@ -96,6 +96,7 @@
 .header-favourites {
     font-weight: 500;
 
+    margin-left: 28px;
     margin-top: 2px;
     position: relative;
 }
