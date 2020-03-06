@@ -205,7 +205,7 @@
 
 @keyframes item-buy-btn-anima {
     100% {
-        background: #0043A4;
+        background: #004FF4;
     }
 }
 
@@ -213,7 +213,7 @@
     padding: 15px 23px 14px 24px;
     border: none;
     color: #F4F6F9;
-    background: linear-gradient(270deg, #0043A4 0%, #1771F1 100%);
+    background: #0043A4 linear-gradient(270deg, #0043A4 0%, #1771F1 100%);
     border-radius: 4px;
 }
 
