@@ -224,11 +224,14 @@
 }
 
 .item-bookmark:before {
-    left: 32px;
+    left: 21px;
 }
 
 
 .item-buy-btn {
-    padding: 15px 23px 14px 24px;
+    padding: 10px 24px 14px 23px;
+    margin-right: 3px;
     border: none;
+    margin-top: 4px;
+
 }
