@@ -45,6 +45,10 @@ p {
     margin: 0 auto;
 }
 
+.display-block {
+    display: block;
+}
+
 .text-attention {
     color: #1670ef;
 }

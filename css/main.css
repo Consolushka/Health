@@ -154,7 +154,7 @@
 }
 
 .sales-content {
-    margin-bottom: 47px;
+    margin-bottom: 26px;
     margin-top: 24px;
 
     width: 350px;
@@ -173,6 +173,7 @@
 }
 
 .delivery-instruction {
+    counter-reset: step-number;
     margin-left: 38px;
     margin-top: -4px;
 
@@ -196,11 +197,6 @@
     margin-right: 35px;
 }
 
-.step-number {
-    font-size: 24px;
-    color: #cccfd0;
-    font-weight: 600;
-}
 
 .step-content {
 
@@ -208,6 +204,14 @@
     line-height: 23px;
     color: #052555;
     font-size: 16px;
+}
+
+.delivery-instruction-step:before {
+    counter-increment: step-number;
+    content: "0" counter(step-number);
+    font-size: 24px;
+    color: #cccfd0;
+    font-weight: 600;
 }
 
 
@@ -257,11 +261,6 @@
     margin-right: 39px;
     margin-bottom: 40px;
     padding: 21px 15px 21px 20px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
 
     transition: border 0.2s;
 }
@@ -332,7 +331,13 @@
 .item-image {
     margin-top: 20px;
 
-    align-self: center;
+    object-fit: contain;
+
+    width: 148px;
+    height: 117px;
+
+    margin-left: auto;
+    margin-right: auto;
     transition: 0.2s;
 }
 
@@ -343,11 +348,20 @@
 .item-name {
     margin-top: 20px;
 
+    max-height: 20px;
+    overflow: hidden;
+
     font-size: 16px;
     color: #052555;
 }
 
 .item-other {
+    height: 18px;
+    width: 222px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
     margin-top: 10px;
     font-size: 14px;
     color: #7A8FAD;
