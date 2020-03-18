@@ -278,6 +278,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+
+    margin-bottom: 20px;
 }
 
 .item-positive {
@@ -329,7 +331,7 @@
 }
 
 .item-image {
-    margin-top: 20px;
+    margin-bottom: 18px;
 
     object-fit: contain;
 
@@ -345,10 +347,17 @@
     transform: scale(1.05);
 }
 
-.item-name {
-    margin-top: 18px;
+.item-info {
+    height: 110px;
+    text-overflow: ellipsis;
 
-    max-height: 20px;
+    margin-bottom: 8px;
+}
+
+.item-name {
+    margin-bottom: 5px;
+
+    max-height: 54px;
     overflow: hidden;
 
     font-size: 16px;
@@ -362,18 +371,18 @@
     white-space: nowrap;
     text-overflow: ellipsis;
 
-    margin-top: 5px;
+    margin-bottom: 5px;
     font-size: 14px;
     color: #7A8FAD;
 }
 
 .item-availability {
+    margin-bottom: 21px;
+
     position: relative;
 
     font-size: 14px;
     color: #1670EF;
-
-    margin-top: 59px;
 
     display: flex;
     flex-direction: row;

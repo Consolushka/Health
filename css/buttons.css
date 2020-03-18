@@ -1,9 +1,3 @@
-@keyframes item-buy-btn-anima {
-    100% {
-        background: #004FF4;
-    }
-}
-
 .header-button {
     padding: 21px 16px 22px 15px;
 }
@@ -47,15 +41,16 @@
 }
 
 .gradient-btn {
-    background: #0043A4 linear-gradient(270deg, #0043A4 0%, #1771F1 100%);
+    background-image: linear-gradient(to right, #0043A4 0%, #1771F1 50%, #1771F1 100%);
+    background-size: 220%;
+    background-repeat: no-repeat;
     color: #F4F6F9;
+
+    transition: all 0.3s;
 }
 
 .gradient-btn:hover {
-    animation-name: item-buy-btn-anima;
-    animation-duration: 0.4s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    background-position: -95px;
 }
 
 .user.header-button {
@@ -229,7 +224,7 @@
 
 
 .item-buy-btn {
-    padding: 10px 24px 14px 23px;
+    padding: 12px 24px;
     margin-right: 3px;
     border: none;
     margin-top: 4px;
