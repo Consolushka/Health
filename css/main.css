@@ -1,3 +1,7 @@
+.main{
+    margin-bottom: 235px;
+}
+
 .offer-card {
     display: flex;
     flex-direction: row;
@@ -139,10 +143,10 @@
 
 .offer-sales {
     min-height: 444px;
-    padding: 54px 50px 0px 62px;
+    padding: 54px 50px 0 62px;
     border-radius: 20px;
     background-color: #ffffff;
-    box-shadow: 0 10px 10px #f1f4f5;
+    box-shadow: 0 16px 25px #8E8E8E;
 }
 
 .sales-heading {
@@ -224,6 +228,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-bottom: 164px;
 }
 
 .catalog-cards {
@@ -437,3 +442,74 @@
     font-size: 20px;
     color: #052555;
 }
+
+.question-heading{
+    font-size: 32px;
+
+    color: #052555;
+
+    margin-bottom: 27px;
+}
+
+.question-info{
+    width: 500px;
+
+    margin-bottom: 58px;
+
+    font-size: 16px;
+    line-height: 23px;
+    color: #052555;
+}
+
+.question-form-user{
+    margin-bottom: 40px;
+}
+
+.question-form-name{
+    margin-right: 36px;
+}
+
+.question-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.question-form-small{
+    width:360px;
+
+    padding: 21px 28px;
+
+    font-size: 16px;
+}
+
+.question-form-grey{
+    background-color: #f4f6f9;
+    border-radius: 10px;
+    border: none;
+
+    color: #90a1b9;
+}
+
+.question-form-comment{
+    margin-bottom: 36px;
+}
+
+.question-form-big{
+    padding: 21px 29px;
+    letter-spacing: 1.1px;
+
+    width: 760px;
+    height: 192px;
+
+    resize: none;
+}
+
+.question-form-button{
+    font-weight: 600;
+    letter-spacing: 1.1px;
+
+    padding: 22px 90px;
+}
+
