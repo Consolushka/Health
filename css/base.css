@@ -55,3 +55,7 @@ button{
 .text-attention {
     color: #1670ef;
 }
+
+.disnone{
+    display: none;
+}

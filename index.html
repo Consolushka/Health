@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
           integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script src="js/lists.js"></script>
+
 </head>
 <body>
 <header class="header">
@@ -32,6 +37,43 @@
             <span class="hamb"></span>
             <span>Каталог</span>
         </button>
+        <div class="catalog">
+            <ul class="catalog-list disnone" id="catalogList">
+                <li class="catalog-list__item" id="Medications">
+                    <span class="catalog-list__item-name">Лекарственные препараты</span>
+                </li>
+                <li class="catalog-list__item" id="Vitamins">
+                    <span class="catalog-list__item-name">Витамины</span>
+                </li>
+                <li class="catalog-list__item" id="Bads">
+                    <span class="catalog-list__item-name">БАД</span>
+                </li>
+                <li class="catalog-list__item" id="Products">
+                    <span class="catalog-list__item-name">Медецинские изделия</span>
+                </li>
+                <li class="catalog-list__item" id="Equipment">
+                    <span class="catalog-list__item-name">Медтехника</span>
+                </li>
+                <li class="catalog-list__item" id="Hygiene">
+                    <span class="catalog-list__item-name">Гигиена</span>
+                </li>
+                <li class="catalog-list__item" id="MomBaby">
+                    <span class="catalog-list__item-name">Мама и малыш</span>
+                </li>
+                <li class="catalog-list__item" id="Cosmetics">
+                    <span class="catalog-list__item-name">Косметика</span>
+                </li>
+                <li class="catalog-list__item" id="Diet">
+                    <span class="catalog-list__item-name">Спорт и диета</span>
+                </li>
+                <li class="catalog-list__item catalog-list__item--sale" id="Sales">
+                    <span class="catalog-list__item-name">Товары со скидкой</span>
+                </li>
+            </ul>
+            <ul class="inner-list" id="InnerList">
+
+            </ul>
+        </div>
         <form action="#" method="post" class="header-search search-form">
             <label class="search">
                 <input id="search" type="search" name="search" value="" class="search-field"
@@ -437,5 +479,8 @@
         <a href="#" class="footer__copyrights-link">RedSoft</a>
     </div>
 </footer>
+
+
+<script type="text/javascript" src="js/catalog-list.js"></script>
 </body>
 </html>

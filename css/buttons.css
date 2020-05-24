@@ -120,6 +120,32 @@
     transform: translateY(2px);
 }
 
+.catalog-list__item-button{
+    position: relative;
+}
+
+.catalog-list__item-button:after,
+.catalog-list__item-button:before{
+    position: absolute;
+    right: -32px;
+    top: 9px;
+
+    content: '';
+
+    display: block;
+    height:2px;
+    width: 6px;
+
+    background: #052555;
+}
+
+.catalog-list__item-button:after{
+    transform:  translateX(3px) rotate(-45deg);
+}
+
+.catalog-list__item-button:before{
+    transform: rotate(45deg);
+}
 .search-done-button {
     letter-spacing: 1px;
     padding: 10px 23px 13px 22px;

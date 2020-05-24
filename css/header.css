@@ -48,12 +48,14 @@
     height: 99px;
 
     border-bottom: 1px solid #c9d7ea;
+
+    position: relative;
 }
 
-.header-catalog {
+.catalog-button{
     padding: 13px 38px 11px 36px;
 
-    background-color: #ebeef1;
+    background: #fbfeff;
 
     color: #1670ef;
 }
@@ -110,3 +112,86 @@
     align-items: center;
 }
 
+.catalog-list{
+    position: absolute;
+    top: 80px;
+    left: 21px;
+    width: 250px;
+    background: #fbfeff;
+}
+
+.catalog-list__item{
+    border-bottom: 1px solid #1670ef;
+    font-weight: 400;
+    color: #052555;
+    padding: 20px 16px;
+}
+
+.catalog-list__item{
+    position: relative;
+}
+.catalog-list__item:after,
+.catalog-list__item:before{
+    position: absolute;
+    content: '';
+    right: 16px;
+    top: 28px;
+    width: 7px;
+    height: 1px;
+    background: #052555;
+
+    transition: 0.2s;
+}
+.catalog-list__item:after{
+    transform: translateX(-4px) rotate(45deg);
+}
+.catalog-list__item:before{
+    transform: rotate(-45deg);
+}
+
+.catalog-list__item--hover:after{
+    transform: rotate(45deg);
+}
+.catalog-list__item--hover:before{
+    transform: rotate(135deg);
+    top: 32px;
+}
+.catalog-list__item:last-child{
+    border: none;
+}
+.catalog-list__item-button:hover{
+    color: #052555;
+}
+
+@keyframes innerList-anim {
+    from{
+        left: 0;
+    }
+    to{
+        left: 271px;
+    }
+}
+
+.inner-list{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 80px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    left: 271px;
+    min-width: 600px;
+    height: 512px;
+    background-color: #eef2f4;
+}
+
+.inner-list--hover{
+    animation: innerList-anim 1s;
+}
+
+.inner-list__item{
+    font-size: 12px;
+    padding: 12px;
+    width: 200px;
+}
